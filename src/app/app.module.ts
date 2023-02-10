@@ -6,6 +6,8 @@ import { LoginComponent } from './login/login.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TransactionComponent } from './transaction/transaction.component';
+import { FileComponent } from './file/file.component';
 
 const routes:Routes = [
   {path:'',component:LoginComponent },
@@ -19,7 +21,9 @@ const routes:Routes = [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    TransactionComponent,
+    FileComponent
   ],
   imports: [
     BrowserModule,
