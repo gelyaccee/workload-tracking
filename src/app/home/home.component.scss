@@ -1,0 +1,32 @@
+$headerColor: #00AFA3;
+$border-bottom-color: rgba(0, 0, 0, 0.12);
+$alternateColor: rgba(0, 179, 166, 0.04);
+
+table {
+    width: 80%;
+    padding: 20px;
+}
+
+.mat-table {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+th {
+    background-color: $headerColor;
+    color: white;
+}
+tr.mat-header-row {
+    height: 35px;
+
+}
+tr.mat-row:nth-child(even) {
+    background-color: $alternateColor;
+}
+
+tr.mat-row {
+    height: 30px;
+}
+
+td.mat-cell {
+    border-bottom: 1px solid;
+}

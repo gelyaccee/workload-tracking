@@ -1,0 +1,17 @@
+nav ul li {
+    margin-right: 1rem;
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+nav ul li:hover {
+    opacity: 0.7 !important;
+}
+
+nav ul {
+    display: flex;
+    background-color: #ebeb;
+    width: 100%;
+    padding: 1rem
+}
