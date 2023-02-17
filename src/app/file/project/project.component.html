@@ -1,1 +1,78 @@
-<p>project works!</p>
+<br><br>
+<div class="col-12 text-end" style="padding-right: 10%;">
+<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#manpower-modal" (click)="openModal()">Add Project</button>
+</div><br>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Project</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+            <form action="#">
+            <div class="row">
+
+                <div class="col-12">
+                <div class="form-floating">
+                    <input id="project-name" type="text" class="form-control" placeholder="Project Name">
+                    <label for="project-name">Project Name</label>
+                </div><br>
+                </div>
+
+                <div class="col-12">
+                <div class="form-floating">
+                    <input id="project-hours" type="text" class="form-control" placeholder="Project Hours">
+                    <label for="project-hours">Project Hours</label>
+                </div><br>
+                </div>
+
+                <div class="col-12">
+                <div class="form-floating">
+                    <input id="project-desc" type="text" class="form-control" placeholder="Project Description">
+                    <label for="project-hours">Project Description</label>
+                </div><br>
+                </div>
+
+            </div>
+            </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="doSomething()">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<table align="center" class="table table-hover table-sm">
+    <thead class="table-light">
+        <tr>
+            <th scope="col">Project Name</th>
+            <th scope="col">Project Hours</th>
+            <th scope="col">Project Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Cooking</td>
+            <td>2 hours</td>
+            <td>Net</td>
+        </tr>
+        <tr>
+            <td>Instalation</td>
+            <td>4 hours</td>
+            <td>Connection</td>
+        </tr>
+        <tr>
+            <td>Editing</td>
+            <td>5 hours</td>
+            <td>Troubleshoot</td>
+        </tr>
+    </tbody>
+</table>

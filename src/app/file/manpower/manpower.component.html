@@ -1,1 +1,91 @@
-<p>manpower works!</p>
+<br><br>
+<div class="col-12 text-end" style="padding-right: 10%;">
+<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#manpower-modal" (click)="openModal()">Add Manpower</button>
+</div><br>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Manpower</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+            <form action="#">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-floating">
+                        <input id="firstname" type="text" class="form-control" placeholder="Firstname">
+                        <label for="firstname">Firstname</label>
+                    </div><br>
+
+                </div>
+                <div class="col-6">
+                    <div class="form-floating">
+                        <input id="lastname" type="text" class="form-control" placeholder="Lastname">
+                        <label for="lastname">Lastname</label>
+                    </div><br>
+                </div>
+
+                <div class="col-12">
+                <div class="form-floating">
+                    <input id="position" type="text" class="form-control" placeholder="Position">
+                    <label for="position">Position</label>
+                </div><br>
+                </div>
+
+                <div class="col-12">
+                <div class="form-floating">
+                    <input id="project" type="text" class="form-control" placeholder="Project">
+                    <label for="project">Project</label>
+                </div><br>
+            </div>
+            </div>
+            </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="doSomething()">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<table align="center" class="table table-hover table-sm">
+    <thead class="table-light">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Firstname</th>
+            <th scope="col">Lastname</th>
+            <th scope="col">Position</th>
+            <th scope="col">Project</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Net</td>
+            <td>3hrs</td>
+            <td>Gef</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Connection</td>
+            <td>2hrs</td>
+            <td>fd</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Larry the Bird</td>
+            <td>Troubleshoot</td>
+            <td>1hr</td>
+            <td>grg</td>
+        </tr>
+    </tbody>
+</table>
